@@ -4,10 +4,10 @@ import { Download, Briefcase, GraduationCap, Award } from 'lucide-react';
 const Resume = () => {
   const experiences = [
     {
-      title: 'Senior Full-Stack Developer',
-      company: 'TechCorp Solutions',
-      period: '2022 - Present',
-      description: 'Lead developer for multiple client projects, specializing in React and Node.js applications. Mentored junior developers and improved team productivity by 40%.'
+      title: 'Your Job Title',
+      company: 'Company Name',
+      period: 'Start Date - End Date',
+      description: 'Description of your role, responsibilities, and achievements.'
     },
     {
       title: 'Frontend Developer',

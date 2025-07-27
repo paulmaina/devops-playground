@@ -4,12 +4,12 @@ import { ExternalLink, Github } from 'lucide-react';
 const Portfolio = () => {
   const projects = [
     {
-      title: 'E-Commerce Platform',
-      description: 'Full-stack e-commerce solution with React, Node.js, and Stripe integration. Features include user authentication, shopping cart, order management, and admin dashboard.',
-      image: 'https://images.pexels.com/photos/230544/pexels-photo-230544.jpeg?auto=compress&cs=tinysrgb&w=600',
-      technologies: ['React', 'Node.js', 'MongoDB', 'Stripe', 'Tailwind CSS'],
-      liveUrl: 'https://example.com',
-      githubUrl: 'https://github.com'
+      title: 'Your Project Title',
+      description: 'Detailed description of your project, what it does, and the problems it solves.',
+      image: 'https://images.pexels.com/photos/your-image-id/pexels-photo.jpeg?auto=compress&cs=tinysrgb&w=600',
+      technologies: ['Your', 'Tech', 'Stack'],
+      liveUrl: 'https://your-live-site.com',
+      githubUrl: 'https://github.com/yourusername/project'
     },
     {
       title: 'Task Management App',

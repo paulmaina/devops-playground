@@ -40,16 +40,13 @@ const About = () => {
             <h3 className="text-2xl font-bold text-gray-900 mb-6">My Story</h3>
             <div className="space-y-4 text-gray-600">
               <p>
-                Started my journey in web development 5 years ago with a simple HTML page and haven't looked back since. 
-                I've had the privilege of working with startups, agencies, and Fortune 500 companies to bring their digital visions to life.
+                Write your personal story here - how you got started, your journey, and what drives you.
               </p>
               <p>
-                My approach combines technical expertise with creative problem-solving, always keeping the end user at the center of every decision. 
-                I believe great software is not just functional, but delightful to use.
+                Describe your approach to work, your philosophy, and what makes you unique.
               </p>
               <p>
-                When I'm not coding, you'll find me exploring new technologies, contributing to open-source projects, 
-                or sharing knowledge through technical writing and mentoring.
+                Share what you do outside of work, your interests, and how you stay current in your field.
               </p>
             </div>
           </div>

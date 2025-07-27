@@ -22,11 +22,11 @@ const Hero = () => {
           </div>
           
           <h1 className="text-4xl md:text-6xl font-bold text-gray-900 mb-6">
-            Hi, I'm <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-600">Alex Johnson</span>
+            Hi, I'm <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-600">Your Name</span>
           </h1>
           
           <p className="text-xl md:text-2xl text-gray-600 mb-8 max-w-3xl mx-auto">
-            Full-Stack Developer & UI/UX Designer passionate about creating beautiful, functional digital experiences
+            Your professional tagline and what you do
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
