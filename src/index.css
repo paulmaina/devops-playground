@@ -82,3 +82,33 @@ textarea:focus-visible {
     0 8px 16px -4px rgba(139, 92, 246, 0.15),
     0 0 40px rgba(16, 185, 129, 0.1);
 }
+
+/* Professional smooth edge effects for profile picture */
+.profile-smooth-edges {
+  /* Anti-aliasing for crisp edges */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  
+  /* Subtle edge softening using multiple techniques */
+  filter: contrast(1.05) saturate(1.1) blur(0.3px);
+  
+  /* Enhanced rendering for smooth edges */
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: crisp-edges;
+  
+  /* Smooth transitions */
+  transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.profile-smooth-edges:hover {
+  /* Slightly sharpen on hover for focus */
+  filter: contrast(1.08) saturate(1.15) blur(0.2px);
+  
+  /* Enhanced glow effect */
+  box-shadow: 
+    0 35px 60px -12px rgba(0, 0, 0, 0.3),
+    0 0 0 1px rgba(255, 255, 255, 0.1),
+    0 15px 35px -5px rgba(59, 130, 246, 0.2),
+    0 8px 16px -4px rgba(139, 92, 246, 0.15),
+    0 0 50px rgba(59, 130, 246, 0.15);
+}

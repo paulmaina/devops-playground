@@ -22,17 +22,8 @@ const Hero = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
         <div className="relative z-10">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
-            {/* Profile Picture - Left Side */}
-            <div className="order-2 lg:order-1 flex justify-center lg:justify-start">
-              <img
-                src="https://images.pexels.com/photos/614810/pexels-photo-614810.jpeg?auto=compress&cs=tinysrgb&w=400&h=400&fit=crop"
-                alt="Professional headshot"
-                className="w-80 h-80 rounded-3xl shadow-2xl transition-all duration-500 hover:scale-105 hover:shadow-3xl object-cover"
-              />
-            </div>
-            
-            {/* Content - Right Side */}
-            <div className="order-1 lg:order-2 text-center lg:text-left">
+            {/* Content - Left Side */}
+            <div className="order-1 lg:order-1 text-center lg:text-left">
               <h1 className="text-4xl md:text-6xl font-bold text-slate-900 mb-6 leading-tight">
                 Hi, I'm <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 via-purple-600 to-blue-800 animate-gradient">Your Name</span>
               </h1>
@@ -93,6 +84,25 @@ const Hero = () => {
               >
                 <ChevronDown className="h-8 w-8 mx-auto" />
               </button>
+            </div>
+            
+            {/* Profile Picture - Right Side with Smooth Edges */}
+            <div className="order-2 lg:order-2 flex justify-center lg:justify-end relative">
+              {/* Gradient overlay for smooth edge transition */}
+              <div className="absolute inset-0 bg-gradient-to-l from-transparent via-white/5 to-white/20 rounded-3xl blur-sm z-10 pointer-events-none"></div>
+              
+              {/* Main profile image with enhanced smooth edges */}
+              <img
+                src="https://images.pexels.com/photos/614810/pexels-photo-614810.jpeg?auto=compress&cs=tinysrgb&w=400&h=400&fit=crop"
+                alt="Professional headshot"
+                className="relative w-80 h-80 rounded-3xl shadow-2xl transition-all duration-500 hover:scale-105 hover:shadow-3xl object-cover profile-smooth-edges z-20"
+                style={{
+                  filter: 'contrast(1.05) saturate(1.1)',
+                }}
+              />
+              
+              {/* Subtle background glow for enhanced edge softening */}
+              <div className="absolute inset-0 bg-gradient-to-br from-blue-100/30 via-purple-100/20 to-transparent rounded-3xl blur-xl scale-110 opacity-60 -z-10"></div>
             </div>
           </div>
         </div>
