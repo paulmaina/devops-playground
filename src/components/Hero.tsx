@@ -25,7 +25,7 @@ const Hero = () => {
             <img
               src="https://images.pexels.com/photos/614810/pexels-photo-614810.jpeg?auto=compress&cs=tinysrgb&w=300&h=300&fit=crop"
               alt="Professional headshot"
-              className="w-40 h-40 rounded-full mx-auto shadow-2xl border-4 border-white ring-4 ring-blue-100/50 transition-transform duration-300 hover:scale-105"
+              className="w-60 h-60 rounded-3xl mx-auto shadow-2xl border-4 border-white ring-4 ring-emerald-100/60 transition-all duration-500 hover:scale-110 hover:shadow-3xl hover:ring-8 hover:ring-emerald-200/40 hover:border-emerald-100 object-cover"
             />
           </div>
           
