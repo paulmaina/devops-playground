@@ -10,7 +10,6 @@ Change the logo text and branding
 2. About Section (src/components/About.tsx)
 Update your personal story, skills, and technologies:
 
-
 Key Content Areas to Update:
 1. Personal Information
 Name: Update in Hero.tsx and Footer.tsx
