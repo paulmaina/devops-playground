@@ -38,7 +38,7 @@ const Contact = () => {
         <div className="grid lg:grid-cols-2 gap-12">
           {/* Contact Information */}
           <div>
-            <h3 className="text-2xl font-bold text-slate-900 mb-8">Initialize Contact📞</h3>
+            <h3 className="text-2xl font-bold text-slate-900 mb-8">Initialize Contact</h3>
             
             <div className="space-y-6 mb-8">
               <div className="flex items-center space-x-4">
