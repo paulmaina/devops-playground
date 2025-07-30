@@ -52,7 +52,7 @@ const About = () => {
                  to continuous learning.
               </p>
               <p>
-                Outside of work, I stay sharp by exploring cloud tech, cybersecurity, and scripting through hands-on projects, and labs. 
+                Outside of work, I stay sharp by exploring cloud tech, cybersecurity, and scripting through hands-on projects, videos and labs. 
                 Whether I’m automating on Linux, fine-tuning YAML, or learning something new before sunrise, I stay curious, focused, and driven 
                 to keep building better systems.
               </p>
