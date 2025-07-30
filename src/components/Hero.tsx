@@ -1,4 +1,5 @@
-import { ChevronDown, Github, Linkedin, Mail } from 'lucide-react';
+import { HiChevronDown } from 'react-icons/hi';
+import { FaGithub, FaLinkedin, FaEnvelope } from 'react-icons/fa';
 import myPhoto from '../assets/my-photo.png';
 
 const Hero = () => {
@@ -12,8 +13,8 @@ const Hero = () => {
   return (
     <section id="hero" className="min-h-screen flex items-center justify-center relative overflow-hidden">
       {/* Background gradients */}
-      <div className="absolute inset-0 bg-gradient-to-br from-slate-50 via-white to-blue-50"></div>
-      <div className="absolute inset-0 bg-gradient-to-tr from-transparent via-purple-50/30 to-transparent"></div>
+      <div className="absolute inset-0 bg-gradient-to-br from-slate-50 via-white to-blue-50 dark:from-slate-900 dark:via-slate-800 dark:to-slate-900"></div>
+      <div className="absolute inset-0 bg-gradient-to-tr from-transparent via-purple-50/30 to-transparent dark:via-purple-900/20"></div>
 
       {/* Animated Background Blobs */}
       <div className="absolute top-20 left-10 w-72 h-72 bg-gradient-to-r from-blue-400/10 to-purple-400/10 rounded-full blur-3xl animate-pulse"></div>
@@ -24,15 +25,15 @@ const Hero = () => {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             {/* Left Content */}
             <div className="order-1 lg:order-1 text-center lg:text-left">
-              <h1 className="text-4xl md:text-6xl font-bold text-slate-900 mb-6 leading-tight">
+              <h1 className="text-4xl md:text-6xl font-bold text-slate-900 dark:text-white mb-6 leading-tight">
                 Hi, I'm <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 via-purple-600 to-blue-800 animate-gradient">Paul Kimani</span>
               </h1>
 
-              <p className="text-xl md:text-2xl text-slate-600 mb-8 max-w-3xl lg:max-w-none font-medium leading-relaxed">
+              <p className="text-xl md:text-2xl text-slate-600 dark:text-slate-300 mb-8 max-w-3xl lg:max-w-none font-medium leading-relaxed">
                 Automating secure, scalable cloud solutions through DevOps excellence.
               </p>
 
-              <p className="text-base md:text-lg text-slate-600 mb-10 max-w-xl leading-relaxed">
+              <p className="text-base md:text-lg text-slate-600 dark:text-slate-400 mb-10 max-w-xl leading-relaxed">
                 I build modern, resilient infrastructure by automating deployments, integrating secure APIs, 
                 and implementing DevSecOps best practices. With experience across AWS, GCP, Oracle Cloud, Containerization, K8s, GitOps, 
                 and CI/CD pipelines, I design systems that are efficient, secure, and built to scale.
@@ -50,9 +51,9 @@ const Hero = () => {
                 </button>
                 <button
                   onClick={() => document.getElementById('portfolio')?.scrollIntoView({ behavior: 'smooth' })}
-                  className="group relative border-2 border-slate-300 text-slate-700 px-8 py-4 rounded-full font-semibold hover:border-blue-600 hover:text-blue-600 hover:bg-blue-50 transition-all duration-300 overflow-hidden"
+                  className="group relative border-2 border-slate-300 dark:border-slate-600 text-slate-700 dark:text-slate-300 px-8 py-4 rounded-full font-semibold hover:border-blue-600 hover:text-blue-600 dark:hover:text-blue-400 hover:bg-blue-50 dark:hover:bg-blue-900/20 transition-all duration-300 overflow-hidden"
                 >
-                  <div className="absolute inset-0 bg-gradient-to-r from-blue-50 to-purple-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                  <div className="absolute inset-0 bg-gradient-to-r from-blue-50 to-purple-50 dark:from-blue-900/30 dark:to-purple-900/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                   <span className="relative z-10">
                     View My Work
                   </span>
@@ -64,31 +65,35 @@ const Hero = () => {
                   href="https://github.com/paulmaina"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="group p-3 rounded-full bg-white shadow-lg hover:shadow-xl text-slate-600 hover:text-blue-600 transition-all duration-300 hover:-translate-y-1"
+                  className="group p-3 rounded-full bg-white dark:bg-slate-800 shadow-lg hover:shadow-xl text-slate-600 dark:text-slate-400 hover:text-blue-600 dark:hover:text-blue-400 transition-all duration-300 hover:-translate-y-1"
+                  aria-label="Visit GitHub profile"
                 >
-                  <Github className="h-6 w-6 group-hover:scale-110 transition-transform duration-300" />
+                  <FaGithub className="h-6 w-6 group-hover:scale-110 transition-transform duration-300" />
                 </a>
                 <a
                   href="https://linkedin.com/in/paul-kimani-b1b996162gt5/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="group p-3 rounded-full bg-white shadow-lg hover:shadow-xl text-slate-600 hover:text-blue-600 transition-all duration-300 hover:-translate-y-1"
+                  className="group p-3 rounded-full bg-white dark:bg-slate-800 shadow-lg hover:shadow-xl text-slate-600 dark:text-slate-400 hover:text-blue-600 dark:hover:text-blue-400 transition-all duration-300 hover:-translate-y-1"
+                  aria-label="Visit LinkedIn profile"
                 >
-                  <Linkedin className="h-6 w-6 group-hover:scale-110 transition-transform duration-300" />
+                  <FaLinkedin className="h-6 w-6 group-hover:scale-110 transition-transform duration-300" />
                 </a>
                 <a
                   href="mailto:paulkim841@gmail.com"
-                  className="group p-3 rounded-full bg-white shadow-lg hover:shadow-xl text-slate-600 hover:text-blue-600 transition-all duration-300 hover:-translate-y-1"
+                  className="group p-3 rounded-full bg-white dark:bg-slate-800 shadow-lg hover:shadow-xl text-slate-600 dark:text-slate-400 hover:text-blue-600 dark:hover:text-blue-400 transition-all duration-300 hover:-translate-y-1"
+                  aria-label="Send email"
                 >
-                  <Mail className="h-6 w-6 group-hover:scale-110 transition-transform duration-300" />
+                  <FaEnvelope className="h-6 w-6 group-hover:scale-110 transition-transform duration-300" />
                 </a>
               </div>
 
               <button
                 onClick={scrollToAbout}
-                className="animate-bounce text-slate-400 hover:text-blue-600 transition-colors duration-300 p-2 rounded-full hover:bg-white/50"
+                className="animate-bounce text-slate-400 dark:text-slate-500 hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-300 p-2 rounded-full hover:bg-white/50 dark:hover:bg-slate-800/50"
+                aria-label="Scroll to about section"
               >
-                <ChevronDown className="h-8 w-8 mx-auto" />
+                <HiChevronDown className="h-8 w-8 mx-auto" />
               </button>
             </div>
 
