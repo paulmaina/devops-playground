@@ -2,6 +2,17 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Dark mode base styles */
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    @apply transition-colors duration-300;
+  }
+}
+
 /* Custom animations and utilities */
 @keyframes gradient {
   0%, 100% {
@@ -19,41 +30,35 @@
   animation: gradient 3s ease infinite;
 }
 
-/* Smooth scrolling */
-html {
-  scroll-behavior: smooth;
-}
-
 /* Custom scrollbar */
 ::-webkit-scrollbar {
   width: 8px;
 }
 
 ::-webkit-scrollbar-track {
-  background: #f1f5f9;
+  @apply bg-slate-100 dark:bg-slate-800;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: linear-gradient(to bottom, #3b82f6, #8b5cf6);
+  @apply bg-gradient-to-b from-blue-500 to-purple-500;
   border-radius: 4px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: linear-gradient(to bottom, #2563eb, #7c3aed);
+  @apply bg-gradient-to-b from-blue-600 to-purple-600;
 }
 
 /* Enhanced focus states for accessibility */
 button:focus-visible,
 input:focus-visible,
 textarea:focus-visible {
-  outline: 2px solid #3b82f6;
+  @apply outline-2 outline-blue-500 dark:outline-blue-400;
   outline-offset: 2px;
 }
 
 /* Improved text selection */
 ::selection {
-  background-color: #3b82f6;
-  color: white;
+  @apply bg-blue-500 text-white dark:bg-blue-400 dark:text-slate-900;
 }
 
 /* Enhanced line clamping */
@@ -73,6 +78,15 @@ textarea:focus-visible {
     0 4px 6px -2px rgba(139, 92, 246, 0.1);
 }
 
+/* Dark mode shadow adjustments */
+.dark .shadow-3xl {
+  box-shadow: 
+    0 25px 50px -12px rgba(0, 0, 0, 0.4),
+    0 0 0 1px rgba(255, 255, 255, 0.1),
+    0 10px 25px -5px rgba(59, 130, 246, 0.2),
+    0 4px 6px -2px rgba(139, 92, 246, 0.2);
+}
+
 /* Profile picture hover glow effect */
 .hover\:shadow-3xl:hover {
   box-shadow: 
@@ -81,6 +95,16 @@ textarea:focus-visible {
     0 15px 35px -5px rgba(16, 185, 129, 0.2),
     0 8px 16px -4px rgba(139, 92, 246, 0.15),
     0 0 40px rgba(16, 185, 129, 0.1);
+}
+
+/* Dark mode hover shadow */
+.dark .hover\:shadow-3xl:hover {
+  box-shadow: 
+    0 35px 60px -12px rgba(0, 0, 0, 0.5),
+    0 0 0 1px rgba(255, 255, 255, 0.15),
+    0 15px 35px -5px rgba(16, 185, 129, 0.3),
+    0 8px 16px -4px rgba(139, 92, 246, 0.25),
+    0 0 50px rgba(16, 185, 129, 0.2);
 }
 
 /* Professional smooth edge effects for profile picture */
@@ -111,4 +135,3 @@ textarea:focus-visible {
     0 15px 35px -5px rgba(59, 130, 246, 0.2),
     0 8px 16px -4px rgba(139, 92, 246, 0.15),
     0 0 50px rgba(59, 130, 246, 0.15);
-}

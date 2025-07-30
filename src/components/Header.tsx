@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { HiMenu, HiX } from 'react-icons/hi';
-import { FaCode } from 'react-icons/fa';
+import { HiMenu, HiX, HiCode } from 'react-icons/hi';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -40,11 +39,11 @@ const Header = () => {
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center space-x-2">
             <div className="relative">
-              <FaCode className="h-8 w-8 text-blue-600 dark:text-blue-400 drop-shadow-sm" />
+              <HiCode className="h-8 w-8 text-blue-600 dark:text-blue-400 drop-shadow-sm" />
               <div className="absolute -inset-1 bg-gradient-to-r from-blue-600 to-purple-600 rounded-full opacity-20 blur-sm"></div>
             </div>
             <span className="font-bold text-xl bg-gradient-to-r from-slate-800 to-slate-600 dark:from-white dark:to-slate-300 bg-clip-text text-transparent">
-              Artifacts of Genius
+              Paul Kimani
             </span>
           </div>
 
