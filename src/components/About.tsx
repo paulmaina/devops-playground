@@ -32,7 +32,8 @@ const About = () => {
           <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4">About Me</h2>
           <div className="w-24 h-1 bg-gradient-to-r from-blue-600 to-purple-600 mx-auto mb-6 rounded-full"></div>
           <p className="text-xl text-slate-600 max-w-3xl mx-auto font-medium">
-            I'm a passionate full-stack developer with 5+ years of experience creating digital solutions that make a difference.
+            A passionate DevOps Engineer with 5+ years of experience designing and automating scalable, secure infrastructure using tools 
+            like Docker, Kubernetes, Terraform, and CI/CD pipelines to power high-impact digital solutions.
           </p>
         </div>
 
@@ -41,13 +42,19 @@ const About = () => {
             <h3 className="text-2xl font-bold text-slate-900 mb-6">My Story</h3>
             <div className="space-y-4 text-slate-600 leading-relaxed">
               <p>
-                Write your personal story here - how you got started, your journey, and what drives you.
+                I’m a DevOps Engineer passionate about automating infrastructure and building secure, scalable systems. My journey started 
+                with a curiosity for how systems work and how to make them better. From traditional monolithic architecture to cloud-native 
+                deployments, I’ve always been drawn to solving complex problems through smart design and clean automation.
               </p>
               <p>
-                Describe your approach to work, your philosophy, and what makes you unique.
+                I focus on the intersection of functionality and reliability, using tools like Kubernetes, Docker, Terraform, and CI/CD 
+                pipelines to streamline delivery and improve system resilience. I approach work with clear communication, collaboration, and a commitment
+                 to continuous learning.
               </p>
               <p>
-                Share what you do outside of work, your interests, and how you stay current in your field.
+                Outside of work, I stay sharp by exploring cloud tech, cybersecurity, and scripting through hands-on projects, and labs. 
+                Whether I’m automating on Linux, fine-tuning YAML, or learning something new before sunrise, I stay curious, focused, and driven 
+                to keep building better systems.
               </p>
             </div>
           </div>

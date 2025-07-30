@@ -34,8 +34,8 @@ const Hero = () => {
 
               <p className="text-base md:text-lg text-slate-600 mb-10 max-w-xl leading-relaxed">
                 I build modern, resilient infrastructure by automating deployments, integrating secure APIs, 
-                and implementing DevSecOps best practices. With experience across AWS, GCP, Oracle Cloud, GitOps, K8S and CI/CD pipelines
-                I design systems that are efficient, secure, and built to scale.
+                and implementing DevSecOps best practices. With experience across AWS, GCP, Oracle Cloud, Containerization, K8s, GitOps, 
+                and CI/CD pipelines, I design systems that are efficient, secure, and built to scale.
               </p>
 
               <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start items-center mb-12">

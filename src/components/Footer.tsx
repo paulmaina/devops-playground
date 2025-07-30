@@ -1,4 +1,3 @@
-import React from 'react';
 import { Code, Heart, Github, Linkedin, Mail } from 'lucide-react';
 
 const Footer = () => {
@@ -20,14 +19,14 @@ const Footer = () => {
                 <Code className="h-8 w-8 text-blue-400 drop-shadow-lg" />
                 <div className="absolute -inset-1 bg-gradient-to-r from-blue-400 to-purple-400 rounded-full opacity-20 blur-sm"></div>
               </div>
-              <span className="font-bold text-xl bg-gradient-to-r from-white to-blue-100 bg-clip-text text-transparent">Alex Johnson</span>
+              <span className="font-bold text-xl bg-gradient-to-r from-white to-blue-100 bg-clip-text text-transparent">Paul Kimani</span>
             </div>
             <p className="text-slate-300 mb-4 leading-relaxed">
-              Full-Stack Developer passionate about creating beautiful and functional digital experiences.
+              DevOps Enginer passionate about making ‘it works on my machine’ work everywhere.
             </p>
             <div className="flex space-x-4">
               <a
-                href="https://github.com"
+                href="https://github.com/paulmaina"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="group p-2 rounded-full bg-slate-800 hover:bg-slate-700 text-slate-400 hover:text-blue-400 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg"
@@ -35,7 +34,7 @@ const Footer = () => {
                 <Github className="h-5 w-5 group-hover:scale-110 transition-transform duration-300" />
               </a>
               <a
-                href="https://linkedin.com"
+                href="https://www.linkedin.com/in/paul-kimani-b1b996162gt5"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="group p-2 rounded-full bg-slate-800 hover:bg-slate-700 text-slate-400 hover:text-blue-400 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg"
@@ -43,7 +42,7 @@ const Footer = () => {
                 <Linkedin className="h-5 w-5 group-hover:scale-110 transition-transform duration-300" />
               </a>
               <a
-                href="mailto:alex@example.com"
+                href="mailto:paulkim841@gmail.com"
                 className="group p-2 rounded-full bg-slate-800 hover:bg-slate-700 text-slate-400 hover:text-blue-400 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg"
               >
                 <Mail className="h-5 w-5 group-hover:scale-110 transition-transform duration-300" />
@@ -77,11 +76,11 @@ const Footer = () => {
           <div className="relative z-10">
             <h3 className="font-semibold text-lg mb-4 text-white">Services</h3>
             <ul className="space-y-2 text-slate-300">
-              <li>Web Development</li>
-              <li>UI/UX Design</li>
-              <li>Mobile Apps</li>
-              <li>Consulting</li>
-              <li>Code Review</li>
+              <li>Cloud Architecture☁️</li>
+              <li>Containerization & Orchestration🐳</li>
+              <li>CI/CD & Automation🚀</li>
+              <li>Security & Compliance🔐</li>
+              <li>Monitoring & Observability📈</li>
             </ul>
           </div>
         </div>
@@ -90,7 +89,7 @@ const Footer = () => {
           <p className="text-slate-300 flex items-center justify-center space-x-1">
             <span>© {currentYear} Made with</span>
             <Heart className="h-4 w-4 text-red-500 animate-pulse" />
-            <span>by Alex Johnson</span>
+            <span>by Paul Kimani</span>
           </p>
         </div>
       </div>

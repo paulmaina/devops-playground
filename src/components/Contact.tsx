@@ -31,14 +31,14 @@ const Contact = () => {
           <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4">Get In Touch</h2>
           <div className="w-24 h-1 bg-gradient-to-r from-blue-600 to-purple-600 mx-auto mb-6 rounded-full"></div>
           <p className="text-xl text-slate-600 max-w-3xl mx-auto font-medium">
-            Ready to start your next project? Let's work together to bring your ideas to life.
+            Ready to streamline your infrastructure and ship faster? Let’s bring your next big idea to life - together.
           </p>
         </div>
 
         <div className="grid lg:grid-cols-2 gap-12">
           {/* Contact Information */}
           <div>
-            <h3 className="text-2xl font-bold text-slate-900 mb-8">Let's Connect</h3>
+            <h3 className="text-2xl font-bold text-slate-900 mb-8">Initialize Contact📞</h3>
             
             <div className="space-y-6 mb-8">
               <div className="flex items-center space-x-4">
@@ -47,7 +47,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <p className="font-semibold text-slate-900">Email</p>
-                  <p className="text-slate-600">your.email@example.com</p>
+                  <p className="text-slate-600">paulkim841@gmail.com</p>
                 </div>
               </div>
               
@@ -57,7 +57,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <p className="font-semibold text-slate-900">Phone</p>
-                  <p className="text-slate-600">Your Phone Number</p>
+                  <p className="text-slate-600">+254722206607</p>
                 </div>
               </div>
               
@@ -67,7 +67,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <p className="font-semibold text-slate-900">Location</p>
-                  <p className="text-slate-600">Your City, State</p>
+                  <p className="text-slate-600">Nairobi, Kenya</p>
                 </div>
               </div>
             </div>
@@ -76,7 +76,7 @@ const Contact = () => {
               <h4 className="text-lg font-semibold text-slate-900 mb-4">Follow Me</h4>
               <div className="flex space-x-4">
                 <a
-                  href="https://github.com"
+                  href="https://github.com/paulmaina"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="group bg-white p-3 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 text-slate-600 hover:text-blue-600 hover:-translate-y-1"
@@ -84,7 +84,7 @@ const Contact = () => {
                   <Github className="h-6 w-6 group-hover:scale-110 transition-transform duration-300" />
                 </a>
                 <a
-                  href="https://linkedin.com"
+                  href="https://www.linkedin.com/in/paul-kimani-b1b996162gt5"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="group bg-white p-3 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 text-slate-600 hover:text-blue-600 hover:-translate-y-1"
@@ -92,7 +92,7 @@ const Contact = () => {
                   <Linkedin className="h-6 w-6 group-hover:scale-110 transition-transform duration-300" />
                 </a>
                 <a
-                  href="https://twitter.com"
+                  href="https://x.com/Paul__kimani"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="group bg-white p-3 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 text-slate-600 hover:text-blue-600 hover:-translate-y-1"
