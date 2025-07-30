@@ -73,7 +73,7 @@ const Contact = () => {
             </div>
 
             <div>
-              <h4 className="text-lg font-semibold text-slate-900 mb-4">Follow Me</h4>
+              <h4 className="text-lg font-semibold text-slate-900 mb-4">Follow Me😉</h4>
               <div className="flex space-x-4">
                 <a
                   href="https://github.com/paulmaina"
