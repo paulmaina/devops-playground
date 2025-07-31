@@ -56,7 +56,7 @@ const Footer = () => {
           <div className="relative z-10">
             <h3 className="font-semibold text-lg mb-4 text-white">Quick Links</h3>
             <ul className="space-y-2">
-              {['Home', 'About', 'Portfolio', 'Resume', 'Contact'].map((item) => (
+              {['🏠Home', '👤About', '💼Portfolio', '📝Resume', '📞Contact'].map((item) => (
                 <li key={item}>
                   <button
                     onClick={() => {
@@ -78,11 +78,11 @@ const Footer = () => {
           <div className="relative z-10">
             <h3 className="font-semibold text-lg mb-4 text-white">Services</h3>
             <ul className="space-y-2 text-slate-300 dark:text-slate-400">
-              <li>Cloud Architecture☁️</li>
-              <li>Containerization & Orchestration🐳</li>
-              <li>CI/CD & Automation🚀</li>
-              <li>Security & Compliance🔐</li>
-              <li>Monitoring & Observability📈</li>
+              <li>☁️Cloud Architecture</li>
+              <li>🐳Containerization & Orchestration</li>
+              <li>🚀CI/CD & Automation</li>
+              <li>🔐Security & Compliance</li>
+              <li>📈Monitoring & Observability</li>
             </ul>
           </div>
         </div>
