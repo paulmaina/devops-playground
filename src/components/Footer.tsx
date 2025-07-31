@@ -56,7 +56,7 @@ const Footer = () => {
           <div className="relative z-10">
             <h3 className="font-semibold text-lg mb-4 text-white">Quick Links</h3>
             <ul className="space-y-2">
-              {['Home', 'About', 'Portfolio', 'Resume', 'Contact'].map((item) => (
+              {['🏠Home', '👤About', '💼Portfolio', '📝Resume', '📞Contact'].map((item) => (
                 <li key={item}>
                   <button
                     onClick={() => {
