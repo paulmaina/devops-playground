@@ -43,7 +43,7 @@ const Header = () => {
               <div className="absolute -inset-1 bg-gradient-to-r from-blue-600 to-purple-600 rounded-full opacity-20 blur-sm"></div>
             </div>
             <span className="font-bold text-xl bg-gradient-to-r from-slate-800 to-slate-600 dark:from-white dark:to-slate-300 bg-clip-text text-transparent">
-              Paul Kimani
+              Artifacts of Genius
             </span>
           </div>
 
