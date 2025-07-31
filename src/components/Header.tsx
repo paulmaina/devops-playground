@@ -38,11 +38,6 @@ const Header = () => {
       <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center space-x-2">
-            <img
-              src="/src/assets/my-photo.png"
-              alt="Paul Kimani"
-              className="w-8 h-8 rounded-full object-cover border-2 border-blue-600/20 dark:border-blue-400/20 shadow-sm hover:shadow-md transition-all duration-300 hover:scale-105"
-            />
             <div className="relative">
               <HiCode className="h-8 w-8 text-blue-600 dark:text-blue-400 drop-shadow-sm" />
               <div className="absolute -inset-1 bg-gradient-to-r from-blue-600 to-purple-600 rounded-full opacity-20 blur-sm"></div>
