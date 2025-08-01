@@ -1,5 +1,6 @@
 import React from 'react';
 import { HiCode, HiColorSwatch, HiServer, HiDeviceMobile } from 'react-icons/hi';
+import workspaceImg from '../assets/workspace.jpg'; // <-- Import your image here
 
 const About = () => {
   const skills = [
@@ -61,7 +62,7 @@ const About = () => {
           
           <div>
             <img
-              src="https://images.pexels.com/photos/3861958/pexels-photo-3861958.jpeg?auto=compress&cs=tinysrgb&w=600"
+              src={workspaceImg} // <-- Use imported image here
               alt="Developer workspace"
               className="rounded-2xl shadow-2xl hover:shadow-3xl transition-shadow duration-300 ring-1 ring-slate-200 dark:ring-slate-700"
             />
