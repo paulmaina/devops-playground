@@ -55,7 +55,7 @@ const Resume = () => {
           <h2 className="text-3xl md:text-4xl font-bold text-slate-900 dark:text-white mb-4">Resume</h2>
           <div className="w-24 h-1 bg-gradient-to-r from-blue-600 to-purple-600 mx-auto mb-6 rounded-full"></div>
           <p className="text-xl text-slate-600 dark:text-slate-300 max-w-3xl mx-auto mb-8 font-medium">
-            My professional journey, education, and achievements that have shaped my career in web development.
+            Grab my resume - it's like a cheat sheet for hiring me🤝
           </p>
           <button
             onClick={handleDownloadResume}
