@@ -1,5 +1,6 @@
 import React from 'react';
-import { HiDownload, HiBriefcase, HiAcademicCap, HiStar } from 'react-icons/hi';
+import { HiDownload, HiBriefcase, HiAcademicCap } from 'react-icons/hi';
+import { HiDocumentText } from 'react-icons/hi';
 
 const Resume = () => {
   const experiences = [
@@ -114,7 +115,7 @@ const Resume = () => {
           <div>
             <div className="bg-gradient-to-br from-slate-50 to-blue-50 dark:from-slate-800 dark:to-slate-700 rounded-2xl p-6 border border-slate-200 dark:border-slate-600">
               <div className="flex items-center space-x-3 mb-6">
-                <HiStar className="h-6 w-6 text-blue-600 dark:text-blue-400" />
+                <HiDocumentText className="h-6 w-6 text-blue-600 dark:text-blue-400" />
                 <h3 className="text-xl font-bold text-slate-900 dark:text-white">Certifications</h3>
               </div>
               
