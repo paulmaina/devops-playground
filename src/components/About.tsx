@@ -1,28 +1,29 @@
 import React from 'react';
-import { HiCode, HiColorSwatch, HiServer, HiDeviceMobile } from 'react-icons/hi';
+import {FaNetworkWired, FaCloud, FaDocker} from 'react-icons/fa';
+import { SiKubernetes } from "react-icons/si";
 import workspaceImg from '../assets/workspace.jpg'; // <-- Import your image here
 
 const About = () => {
   const skills = [
     {
-      category: 'Frontend',
-      icon: <HiCode className="h-8 w-8" />,
-      technologies: ['React', 'TypeScript', 'Next.js', 'Tailwind CSS', 'Vue.js']
+      category: 'Coputer Networking & Security',
+      icon: <FaNetworkWired className="h-10 w-10" />,
+      technologies: ['OSI & TCP/IP Models', 'IP Addressing & Subnetting', 'Routing & Switching', 'DNS', 'Network Security']
     },
     {
-      category: 'Backend',
-      icon: <HiServer className="h-8 w-8" />,
-      technologies: ['Node.js', 'Python', 'PostgreSQL', 'MongoDB', 'GraphQL']
+      category: 'Cloud Computing(AWS, GCP, Oracle Cloud)',
+      icon: <FaCloud className="h-10 w-10" />, 
+      technologies: ['Compute', 'Storage & Databases', 'Networking & IAM', 'Serverless', 'IaC']
     },
     {
-      category: 'Design',
-      icon: <HiColorSwatch className="h-8 w-8" />,
-      technologies: ['Figma', 'Adobe XD', 'Photoshop', 'Illustrator', 'Sketch']
+      category: 'Docker',
+      icon: <FaDocker className="h-10 w-10" />,
+      technologies: ['Image Optimization', 'Multi-Stage Builds', 'Container Networking', 'Persistent Volumes', 'Docker Compose']
     },
     {
-      category: 'Mobile',
-      icon: <HiDeviceMobile className="h-8 w-8" />,
-      technologies: ['React Native', 'Flutter', 'iOS', 'Android', 'Ionic']
+      category: 'Kubernetes',
+      icon: <SiKubernetes className="h-10 w-10" />,
+      technologies: ['Pod Management', 'Declarative Deployments', 'Service Discovery', 'Secrets & ConfigMaps', 'Ingress & TLS Routing']
     }
   ];
 
