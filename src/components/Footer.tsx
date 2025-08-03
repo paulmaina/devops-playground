@@ -76,7 +76,7 @@ const Footer = () => {
 
           {/* Services */}
           <div className="relative z-10">
-            <h3 className="font-semibold text-lg mb-4 text-white">Services</h3>
+            <h3 className="font-semibold text-lg mb-4 text-white">Competencies</h3>
             <ul className="space-y-2 text-slate-300 dark:text-slate-400">
               <li>☁️Cloud Architecture</li>
               <li>🐳Containerization & Orchestration</li>
