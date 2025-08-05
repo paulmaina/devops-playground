@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { HiMail, HiPhone, HiLocationMarker, HiPaperAirplane } from 'react-icons/hi';
-import { FaGithub, FaLinkedin, FaTwitter } from 'react-icons/fa';
+import { FaGithub, FaLinkedin} from 'react-icons/fa';
+import { FaSquareXTwitter } from "react-icons/fa6";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -98,7 +99,7 @@ const Contact = () => {
                   rel="noopener noreferrer"
                   className="group bg-white dark:bg-slate-800 p-3 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 text-slate-600 dark:text-slate-400 hover:text-blue-600 dark:hover:text-blue-400 hover:-translate-y-1"
                 >
-                  <FaTwitter className="h-6 w-6 group-hover:scale-110 transition-transform duration-300" />
+                  <FaSquareXTwitter className="h-6 w-6 group-hover:scale-110 transition-transform duration-300" />
                 </a>
               </div>
             </div>

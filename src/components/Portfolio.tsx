@@ -27,30 +27,6 @@ const Portfolio = () => {
       technologies: ['React', 'D3.js', 'Weather API', 'Chart.js'],
       liveUrl: 'https://example.com',
       githubUrl: 'https://github.com'
-    },
-    {
-      title: 'Social Media Analytics',
-      description: 'Comprehensive analytics dashboard for social media performance tracking with automated reporting and insights.',
-      image: 'https://images.pexels.com/photos/270348/pexels-photo-270348.jpeg?auto=compress&cs=tinysrgb&w=600',
-      technologies: ['Python', 'Django', 'PostgreSQL', 'Chart.js', 'API Integration'],
-      liveUrl: 'https://example.com',
-      githubUrl: 'https://github.com'
-    },
-    {
-      title: 'Mobile Fitness App',
-      description: 'Cross-platform fitness tracking application with workout plans, progress tracking, and social features.',
-      image: 'https://images.pexels.com/photos/841130/pexels-photo-841130.jpeg?auto=compress&cs=tinysrgb&w=600',
-      technologies: ['React Native', 'Firebase', 'Redux', 'Health API'],
-      liveUrl: 'https://example.com',
-      githubUrl: 'https://github.com'
-    },
-    {
-      title: 'AI Chat Interface',
-      description: 'Modern chat interface with AI integration, real-time messaging, and intelligent conversation management.',
-      image: 'https://images.pexels.com/photos/8386440/pexels-photo-8386440.jpeg?auto=compress&cs=tinysrgb&w=600',
-      technologies: ['Next.js', 'OpenAI API', 'WebSocket', 'Tailwind CSS'],
-      liveUrl: 'https://example.com',
-      githubUrl: 'https://github.com'
     }
   ];
 

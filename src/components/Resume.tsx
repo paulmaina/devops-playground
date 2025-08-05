@@ -34,7 +34,7 @@ const Resume = () => {
   ];
 
   const certifications = [
-    'AWS Certified Developer',
+    'Cisco Cetified Network Associate (CCNA)',
     'Google Cloud Professional',
     'Meta React Developer',
     'MongoDB Certified Developer'
@@ -134,7 +134,7 @@ const Resume = () => {
               <div className="space-y-4">
                 <div>
                   <p className="text-slate-600 dark:text-slate-300 font-medium">Years of Experience</p>
-                  <p className="text-3xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">5+</p>
+                  <p className="text-3xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">4+</p>
                 </div>
                 <div>
                   <p className="text-slate-600 dark:text-slate-300 font-medium">Projects Completed</p>
@@ -142,7 +142,7 @@ const Resume = () => {
                 </div>
                 <div>
                   <p className="text-slate-600 dark:text-slate-300 font-medium">Happy Clients</p>
-                  <p className="text-3xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">30+</p>
+                  <p className="text-3xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">20+</p>
                 </div>
               </div>
             </div>

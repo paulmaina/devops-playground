@@ -16,7 +16,7 @@ const About = () => {
       technologies: ['Compute', 'Storage & Databases', 'Networking & IAM', 'Serverless', 'IaC']
     },
     {
-      category: 'Docker',
+      category: 'Docker/Podman',
       icon: <FaDocker className="h-10 w-10" />,
       technologies: ['Image Optimization', 'Multi-Stage Builds', 'Container Networking', 'Persistent Volumes', 'Docker Compose']
     },
@@ -46,7 +46,7 @@ const About = () => {
               <p>
                 I’m a DevOps Engineer passionate about automating infrastructure and building secure, scalable systems. My journey started 
                 with a curiosity for how systems work and how to make them better. From traditional monolithic architecture to cloud-native 
-                deployments, I’ve always been drawn to solving complex problems through smart design and clean automation.
+                microservices deployments, I’ve always been drawn to solving complex problems through smart design and clean automation.
               </p>
               <p>
                 I focus on the intersection of functionality and reliability, using tools like Kubernetes, Docker, Terraform, and CI/CD 
