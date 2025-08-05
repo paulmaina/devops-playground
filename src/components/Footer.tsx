@@ -56,18 +56,27 @@ const Footer = () => {
           <div className="relative z-10">
             <h3 className="font-semibold text-lg mb-4 text-white">Quick Links</h3>
             <ul className="space-y-2">
-              {['🏠Home', '👤About', '💼Portfolio', '📝Resume', '📞Contact'].map((item) => (
-                <li key={item}>
+              {[
+                { label: '🏠Home', id: 'hero' },
+                { label: '👤About', id: 'about' },
+                { label: '💼Portfolio', id: 'portfolio' },
+                { label: '📝Resume', id: 'resume' },
+                { label: '📞Contact', id: 'contact' }
+              ].map((item) => (
+                <li key={item.id}>
                   <button
                     onClick={() => {
-                      const element = document.getElementById(item.toLowerCase());
+                      const element = document.getElementById(item.id);
                       if (element) {
                         element.scrollIntoView({ behavior: 'smooth' });
+                      } else {
+                        console.warn(`Element with ID '${item.id}' not found`);
                       }
                     }}
                     className="text-slate-300 dark:text-slate-400 hover:text-blue-400 transition-colors duration-300 hover:translate-x-1 transform inline-block"
+                    aria-label={`Navigate to ${item.label.replace(/[^\w\s]/gi, '').trim()} section`}
                   >
-                    {item}
+                    {item.label}
                   </button>
                 </li>
               ))}
