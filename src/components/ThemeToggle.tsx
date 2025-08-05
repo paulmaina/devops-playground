@@ -8,14 +8,14 @@ const ThemeToggle: React.FC = () => {
   return (
     <button
       onClick={toggleTheme}
-      className="fixed top-4 right-4 z-50 p-2.5 rounded-full bg-white/90 dark:bg-slate-800/90 backdrop-blur-md shadow-lg hover:shadow-xl border border-slate-200/50 dark:border-slate-700/50 transition-all duration-300 hover:scale-105 group min-w-[44px] min-h-[44px] flex items-center justify-center"
+      className="fixed top-4 right-4 z-50 p-2 rounded-full bg-white/90 dark:bg-slate-800/90 backdrop-blur-md shadow-lg hover:shadow-xl border border-slate-200/50 dark:border-slate-700/50 transition-all duration-300 hover:scale-105 group w-10 h-10 flex items-center justify-center"
       aria-label={`Switch to ${theme === 'light' ? 'dark' : 'light'} mode`}
       title={`Switch to ${theme === 'light' ? 'dark' : 'light'} mode`}
     >
-      <div className="relative w-5 h-5">
+      <div className="relative w-4 h-4">
         {/* Sun Icon */}
         <HiSun 
-          className={`absolute inset-0 w-5 h-5 text-amber-500 transition-all duration-300 transform ${
+          className={`absolute inset-0 w-4 h-4 text-amber-500 transition-all duration-300 transform ${
             theme === 'light' 
               ? 'rotate-0 scale-100 opacity-100' 
               : 'rotate-90 scale-0 opacity-0'
@@ -24,7 +24,7 @@ const ThemeToggle: React.FC = () => {
         
         {/* Moon Icon */}
         <HiMoon 
-          className={`absolute inset-0 w-5 h-5 text-slate-700 dark:text-slate-300 transition-all duration-300 transform ${
+          className={`absolute inset-0 w-4 h-4 text-slate-700 dark:text-slate-300 transition-all duration-300 transform ${
             theme === 'dark' 
               ? 'rotate-0 scale-100 opacity-100' 
               : '-rotate-90 scale-0 opacity-0'
