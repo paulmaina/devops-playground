@@ -1,5 +1,5 @@
-import { HiCode, HiHeart } from 'react-icons/hi';
-import { FaGithub, FaLinkedin } from 'react-icons/fa';
+import { HiCode } from 'react-icons/hi';
+import { FaGithub, FaLinkedin, FaRegHeart} from 'react-icons/fa';
 import { HiMail } from 'react-icons/hi';
 
 const Footer = () => {
@@ -99,7 +99,7 @@ const Footer = () => {
         <div className="border-t border-slate-700 dark:border-slate-800 mt-8 pt-8 text-center relative z-10">
           <p className="text-slate-300 dark:text-slate-400 flex items-center justify-center space-x-1">
             <span>© {currentYear} Made with</span>
-            <HiHeart className="h-4 w-4 text-red-500 animate-pulse" />
+            <FaRegHeart className="h-4 w-4 text-red-500 animate-pulse" />
             <span>by Paul Kimani</span>
           </p>
         </div>
