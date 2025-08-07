@@ -91,16 +91,6 @@ const Header = () => {
                 </div>
               </button>
             </div>
-            
-            {/* Theme Toggle - Always visible */}
-            <button
-              className="p-2 rounded-lg bg-white/90 dark:bg-slate-800/90 backdrop-blur-md shadow-lg hover:shadow-xl border border-slate-200/50 dark:border-slate-700/50 transition-all duration-300 hover:scale-105 group w-10 h-10 flex items-center justify-center text-slate-700 dark:text-slate-300 hover:text-blue-600 dark:hover:text-blue-400"
-              onClick={() => {/* Theme toggle functionality will be handled by ThemeToggle component */}}
-              aria-label="Toggle theme"
-            >
-              {/* This will be replaced with actual theme toggle content */}
-              <div className="w-4 h-4 rounded-full bg-gradient-to-r from-amber-400 to-blue-400"></div>
-            </button>
           </div>
         </div>
 
