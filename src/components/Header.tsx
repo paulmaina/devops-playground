@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { HiMenu, HiX, HiCode } from 'react-icons/hi';
+import ThemeToggle from './ThemeToggle';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -63,33 +64,67 @@ const Header = () => {
             </div>
           </div>
 
-          {/* Mobile menu button */}
-          <div className="md:hidden">
+          {/* Mobile Navigation & Theme Toggle Container */}
+          <div className="flex items-center space-x-3">
+            {/* Mobile menu button */}
+            <div className="md:hidden">
+              <button
+                onClick={() => setIsMenuOpen(!isMenuOpen)}
+                className="inline-flex items-center justify-center p-2 rounded-lg text-slate-700 dark:text-slate-300 hover:text-blue-600 dark:hover:text-blue-400 hover:bg-slate-50 dark:hover:bg-slate-800 focus:outline-none transition-all duration-200 w-10 h-10"
+                aria-label={isMenuOpen ? 'Close navigation menu' : 'Open navigation menu'}
+              >
+                <div className="relative w-5 h-5">
+                  <HiMenu 
+                    className={`absolute inset-0 w-5 h-5 transition-all duration-300 transform ${
+                      isMenuOpen 
+                        ? 'rotate-90 scale-0 opacity-0' 
+                        : 'rotate-0 scale-100 opacity-100'
+                    }`}
+                  />
+                  <HiX 
+                    className={`absolute inset-0 w-5 h-5 transition-all duration-300 transform ${
+                      isMenuOpen 
+                        ? 'rotate-0 scale-100 opacity-100' 
+                        : '-rotate-90 scale-0 opacity-0'
+                    }`}
+                  />
+                </div>
+              </button>
+            </div>
+            
+            {/* Theme Toggle - Always visible */}
             <button
-              onClick={() => setIsMenuOpen(!isMenuOpen)}
-              className="inline-flex items-center justify-center p-2 rounded-lg text-slate-700 dark:text-slate-300 hover:text-blue-600 dark:hover:text-blue-400 hover:bg-slate-50 dark:hover:bg-slate-800 focus:outline-none transition-all duration-200"
+              className="p-2 rounded-lg bg-white/90 dark:bg-slate-800/90 backdrop-blur-md shadow-lg hover:shadow-xl border border-slate-200/50 dark:border-slate-700/50 transition-all duration-300 hover:scale-105 group w-10 h-10 flex items-center justify-center text-slate-700 dark:text-slate-300 hover:text-blue-600 dark:hover:text-blue-400"
+              onClick={() => {/* Theme toggle functionality will be handled by ThemeToggle component */}}
+              aria-label="Toggle theme"
             >
-              {isMenuOpen ? <HiX className="h-6 w-6" /> : <HiMenu className="h-6 w-6" />}
+              {/* This will be replaced with actual theme toggle content */}
+              <div className="w-4 h-4 rounded-full bg-gradient-to-r from-amber-400 to-blue-400"></div>
             </button>
           </div>
         </div>
 
         {/* Mobile Navigation Menu */}
-        {isMenuOpen && (
-          <div className="md:hidden bg-white/95 dark:bg-slate-900/95 backdrop-blur-md border-t border-slate-200/50 dark:border-slate-700/50 shadow-lg">
+        <div className={`md:hidden transition-all duration-300 ease-in-out overflow-hidden ${
+          isMenuOpen 
+            ? 'max-h-96 opacity-100' 
+            : 'max-h-0 opacity-0'
+        }`}>
+          <div className="bg-white/95 dark:bg-slate-900/95 backdrop-blur-md border-t border-slate-200/50 dark:border-slate-700/50 shadow-lg">
             <div className="px-2 pt-2 pb-3 space-y-1">
               {navItems.map((item) => (
                 <button
                   key={item.id}
                   onClick={() => scrollToSection(item.id)}
-                  className="block w-full text-left px-4 py-3 text-base font-semibold text-slate-700 dark:text-slate-300 hover:text-blue-600 dark:hover:text-blue-400 hover:bg-gradient-to-r hover:from-blue-50 hover:to-purple-50 dark:hover:from-blue-900/30 dark:hover:to-purple-900/30 rounded-lg transition-all duration-200"
+                  className="group block w-full text-left px-4 py-3 text-base font-semibold text-slate-700 dark:text-slate-300 hover:text-blue-600 dark:hover:text-blue-400 hover:bg-gradient-to-r hover:from-blue-50 hover:to-purple-50 dark:hover:from-blue-900/30 dark:hover:to-purple-900/30 rounded-lg transition-all duration-200 relative overflow-hidden"
                 >
-                  {item.label}
+                  <span className="relative z-10">{item.label}</span>
+                  <div className="absolute inset-0 bg-gradient-to-r from-blue-600/5 to-purple-600/5 dark:from-blue-400/10 dark:to-purple-400/10 scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></div>
                 </button>
               ))}
             </div>
           </div>
-        )}
+        </div>
       </nav>
     </header>
   );
