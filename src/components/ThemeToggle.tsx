@@ -37,8 +37,6 @@ const ThemeToggle = () => {
         <div className="absolute inset-0 rounded-lg bg-gradient-to-r from-amber-400/15 to-blue-400/15 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
       </button>
     </div>
-      </button>
-    </div>
   );
 };
 
