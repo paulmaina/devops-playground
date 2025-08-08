@@ -65,37 +65,34 @@ const Header = () => {
           </div>
 
           {/* Mobile Navigation & Theme Toggle Container */}
-          <div className="flex items-center space-x-3">
-            {/* Mobile menu button */}
-            <div className="md:hidden">
-              <button
-                onClick={() => setIsMenuOpen(!isMenuOpen)}
-                className="inline-flex items-center justify-center p-2 rounded-lg text-slate-700 dark:text-slate-300 hover:text-blue-600 dark:hover:text-blue-400 hover:bg-slate-50 dark:hover:bg-slate-800 focus:outline-none transition-all duration-200 w-10 h-10"
-                aria-label={isMenuOpen ? 'Close navigation menu' : 'Open navigation menu'}
-              >
-                <div className="relative w-5 h-5">
-                  <HiMenu 
-                    className={`absolute inset-0 w-5 h-5 transition-all duration-300 transform ${
-                      isMenuOpen 
-                        ? 'rotate-90 scale-0 opacity-0' 
-                        : 'rotate-0 scale-100 opacity-100'
-                    }`}
-                  />
-                  <HiX 
-                    className={`absolute inset-0 w-5 h-5 transition-all duration-300 transform ${
-                      isMenuOpen 
-                        ? 'rotate-0 scale-100 opacity-100' 
-                        : '-rotate-90 scale-0 opacity-0'
-                    }`}
-                  />
-                </div>
-              </button>
-            </div>
-            
-            {/* Theme Toggle - positioned after mobile nav button */}
-            <ThemeToggle />
+          {/* Mobile menu button - only visible on mobile */}
+          <div className="md:hidden">
+            <button
+              onClick={() => setIsMenuOpen(!isMenuOpen)}
+              className="inline-flex items-center justify-center p-2 rounded-lg text-slate-700 dark:text-slate-300 hover:text-blue-600 dark:hover:text-blue-400 hover:bg-slate-50 dark:hover:bg-slate-800 focus:outline-none transition-all duration-200 w-10 h-10"
+              aria-label={isMenuOpen ? 'Close navigation menu' : 'Open navigation menu'}
+            >
+              <div className="relative w-5 h-5">
+                <HiMenu 
+                  className={`absolute inset-0 w-5 h-5 transition-all duration-300 transform ${
+                    isMenuOpen 
+                      ? 'rotate-90 scale-0 opacity-0' 
+                      : 'rotate-0 scale-100 opacity-100'
+                  }`}
+                />
+                <HiX 
+                  className={`absolute inset-0 w-5 h-5 transition-all duration-300 transform ${
+                    isMenuOpen 
+                      ? 'rotate-0 scale-100 opacity-100' 
+                      : '-rotate-90 scale-0 opacity-0'
+                  }`}
+                />
+              </div>
+            </button>
           </div>
         </div>
+
+        {/* Theme Toggle - positioned independently in top-right */}
 
         {/* Mobile Navigation Menu */}
         <div className={`md:hidden transition-all duration-300 ease-in-out overflow-hidden ${
