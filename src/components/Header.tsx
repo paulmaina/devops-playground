@@ -116,6 +116,7 @@ const Header = () => {
                 </button>
               ))}
             </div>
+          </div>
         </div>
       </nav>
     </header>
