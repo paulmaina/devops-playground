@@ -91,6 +91,9 @@ const Header = () => {
                 </div>
               </button>
             </div>
+            
+            {/* Theme Toggle - positioned after mobile nav button */}
+            <ThemeToggle />
           </div>
         </div>
 
@@ -113,7 +116,6 @@ const Header = () => {
                 </button>
               ))}
             </div>
-          </div>
         </div>
       </nav>
     </header>
