@@ -9,7 +9,7 @@ const ThemeToggle = () => {
     <div className="fixed top-4 right-4 z-50">
       <button
         onClick={toggleTheme}
-        className="p-2.5 rounded-lg bg-white/90 dark:bg-slate-800/90 backdrop-blur-md shadow-lg hover:shadow-xl border border-slate-200/50 dark:border-slate-700/50 transition-all duration-300 hover:scale-105 group min-w-[44px] min-h-[44px] flex items-center justify-center"
+        className="p-2 rounded-lg bg-white/90 dark:bg-slate-800/90 backdrop-blur-md shadow-lg hover:shadow-xl border border-slate-200/50 dark:border-slate-700/50 transition-all duration-300 hover:scale-105 group w-10 h-10 flex items-center justify-center"
         aria-label={`Switch to ${theme === 'light' ? 'dark' : 'light'} mode`}
         title={`Switch to ${theme === 'light' ? 'dark' : 'light'} mode`}
       >
