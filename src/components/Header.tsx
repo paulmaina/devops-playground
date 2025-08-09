@@ -64,12 +64,11 @@ const Header = () => {
             </div>
           </div>
 
-          {/* Mobile Navigation & Theme Toggle Container */}
           {/* Mobile menu button - only visible on mobile */}
           <div className="md:hidden">
             <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
-              className="inline-flex items-center justify-center p-2 rounded-lg text-slate-700 dark:text-slate-300 hover:text-blue-600 dark:hover:text-blue-400 hover:bg-slate-50 dark:hover:bg-slate-800 focus:outline-none transition-all duration-200 w-10 h-10"
+              className="inline-flex items-center justify-center p-2 rounded-lg bg-white/90 dark:bg-slate-800/90 backdrop-blur-md shadow-lg hover:shadow-xl border border-slate-200/50 dark:border-slate-700/50 text-slate-700 dark:text-slate-300 hover:text-blue-600 dark:hover:text-blue-400 hover:scale-105 focus:outline-none transition-all duration-300 w-10 h-10"
               aria-label={isMenuOpen ? 'Close navigation menu' : 'Open navigation menu'}
             >
               <div className="relative w-5 h-5">
@@ -92,15 +91,13 @@ const Header = () => {
           </div>
         </div>
 
-        {/* Theme Toggle - positioned independently in top-right */}
-
         {/* Mobile Navigation Menu */}
         <div className={`md:hidden transition-all duration-300 ease-in-out overflow-hidden ${
           isMenuOpen 
             ? 'max-h-96 opacity-100' 
             : 'max-h-0 opacity-0'
         }`}>
-          <div className="bg-white/95 dark:bg-slate-900/95 backdrop-blur-md border-t border-slate-200/50 dark:border-slate-700/50 shadow-lg">
+          <div className="bg-white/95 dark:bg-slate-900/95 backdrop-blur-md border-t border-slate-200/50 dark:border-slate-700/50 shadow-lg mt-2">
             <div className="px-2 pt-2 pb-3 space-y-1">
               {navItems.map((item) => (
                 <button
