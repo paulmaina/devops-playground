@@ -65,7 +65,7 @@ const Header = () => {
           </div>
 
           {/* Mobile menu button - only visible on mobile */}
-          <div className="md:hidden">
+          <div className="md:hidden fixed top-4 right-16 z-40">
             <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
               className="inline-flex items-center justify-center p-2 rounded-lg bg-white/90 dark:bg-slate-800/90 backdrop-blur-md shadow-lg hover:shadow-xl border border-slate-200/50 dark:border-slate-700/50 text-slate-700 dark:text-slate-300 hover:text-blue-600 dark:hover:text-blue-400 hover:scale-105 focus:outline-none transition-all duration-300 w-10 h-10"
