@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import { HiMenu, HiX, HiCode } from 'react-icons/hi';
-import ThemeToggle from './ThemeToggle';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);

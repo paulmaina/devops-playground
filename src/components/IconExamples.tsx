@@ -1,6 +1,6 @@
 import React from 'react';
 // Different icon families from react-icons
-import { FaReact, FaNodeJs, FaDocker, FaAws, FaGithub } from 'react-icons/fa';
+import { FaReact, FaNodeJs, FaDocker, FaGithub } from 'react-icons/fa';
 import { SiKubernetes, SiTerraform, SiJenkins, SiMongodb } from 'react-icons/si';
 import { HiCode, HiServer, HiCloud, HiShieldCheck } from 'react-icons/hi';
 import { BiGitBranch, BiTerminal } from 'react-icons/bi';

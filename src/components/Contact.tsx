@@ -33,7 +33,7 @@ const Contact = () => {
 
       alert('Thank you for your message! I\'ll get back to you soon.');
       setFormData({ name: '', email: '', subject: '', message: '' });
-    } catch (error) {
+    } catch {
       alert('Sorry, there was a problem sending your message. Please try again later.');
     }
   };
